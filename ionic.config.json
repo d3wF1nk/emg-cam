@@ -1,0 +1,7 @@
+{
+  "name": "emergency-camera",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
