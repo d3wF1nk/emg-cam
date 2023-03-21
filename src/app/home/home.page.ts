@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RecorderService} from "../services/recorder.service";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public recorderService: RecorderService) {}
+
+  addPhotoToGallery() {
+    this.recorderService.addNewToGallery();
+  }
 
 }
